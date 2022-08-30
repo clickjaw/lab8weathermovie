@@ -2,16 +2,39 @@ body{
   background-color: lightcyan;
   display: flex;
   justify-content: center;
-}
+  background-image: url("https://static.vecteezy.com/system/resources/previews/002/920/438/original/abstract-city-map-seamless-pattern-roads-navigation-gps-use-for-pattern-fills-surface-textures-web-page-background-wallpaper-illustration-free-vector.jpg");
+  background-size: fixed;
+  background-attachment: fixed;
 
+}
 .cardBodyTemp{
   margin: 10px;
   background-color: rgb(243, 188, 105);
   border-radius: 10px;
 }
-
 .cardBodyMovie{
   margin: 10px;
   background-color: lightgreen;
   border-radius: 10px;
+}
+.citySearch{
+  font-family: 'Vidaloka';
+  display: flex;
+  justify-content: center;
+
+}
+
+.aHeader{
+  font-family: 'Vidaloka';
+}
+
+.no{
+  /* background-color: #1A224C; */
+  background-color: #2ba9b2;
+
+  color: white;
+}
+.yes{
+  background-color: #8adc64;
+
 }
