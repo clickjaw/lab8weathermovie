@@ -73,11 +73,11 @@ export default class WeatherForm extends Component {
  
   render() {
     return (
-      <div>
+      <div className = 'bigDiv'>
         <h1 className="citySearch">City Search</h1>
         <Form onSubmit={this.getWeather}>
           <Form.Group>
-            <Form.Control
+            <Form.Control placeholder = "Search City..."
               required
               type="text"
               onChange={this.setQuery}
@@ -93,13 +93,13 @@ export default class WeatherForm extends Component {
             className={this.state.isDay}
             style={{ display: "flex", flexDirection: "column" }}
           >
-            <Card.Title style={{ display: "flex", justifyContent: "center" }}>
+            <Card.Title style={{ display: "flex"}}>
               City: {this.state.cityName}
             </Card.Title>
-            <Card.Text style={{ display: "flex", justifyContent: "center" }}>
+            <Card.Text style={{ display: "flex"}}>
               Lat:{this.state.lat}
             </Card.Text>
-            <Card.Text style={{ display: "flex", justifyContent: "center" }}>
+            <Card.Text style={{ display: "flex" }}>
               Lon:{this.state.lon}
             </Card.Text>
             <Card.Text style={{ display: "flex", justifyContent: "center" }}>
